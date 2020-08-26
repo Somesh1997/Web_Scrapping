@@ -1,0 +1,10 @@
+var fs = require("fs"); 
+var data = fs.readFileSync('Afghanistan/Aftab Alam.json');  
+console.log("Synchronous read: " + data);  
+console.log(typeof(data));
+console.log(data[0].runs);
+var j=JSON.parse(data);
+console.log(j);
+console.log(typeof(j));
+console.log(typeof(j[0].runs));
+console.table(j);
